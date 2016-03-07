@@ -1,0 +1,38 @@
+History written: Tue Mar 19 13:12:59 2013
+produced by bozin
+##### Run Information     runCorrection=
+prep=     machine=
+run=#####     background=General_Setting
+smooth=title=X-ray    smoothParam=PDF      backKillThresh=-1.0
+in beam: radius=     height=
+temp=sourcedir=/u24/local/pdfgetx2/     runTitle=sourcedir=/u24/local/pdfgetx2/
+
+##### Vanadium     runCorrection=autosave_isa=1
+run=iqfilesurfix=.iq     background=sqfilesurfix=.sq
+smooth=    smoothParam=      vanKillThresh=4.0    vBackKillThresh=-1.0
+in beam: radius=     height=
+
+##### Container     runCorrection=delimiter=
+run=###     background=SPEC
+smooth=columnname_id=#L    smoothParam=columnname_delimiter=      cBackKillThresh=-1.0
+wallThick=data_id=     atomDensity=data_delimiter=
+atomic information: scattCS=Format     absorpCS=
+
+##### Sample Material     numElements=file     NormLaue=format
+Element relAtomNum atomMass atomCoherCS atomIncoherCS atomAbsorpCS
+density=#####     effDensity=Data&Background
+
+##### Banks=num_sambkgs=1  deltaQ=0.02  matchRef=0  matchScal=T  matchOffset=T
+bank   angle   blendQmin   blendQmax       (0.0 means no info)
+
+##### Program Specific Information
+## Ft     calcError=0     (1 for true, 0 for false)
+numRpoints=     maxR=     numDensity=0.0   intMaxR=1.5
+## Damp     Qmin=     Qmax=     startDampQ=    QAveMin=0.6
+dampFuncType=title=PDF     modEqn=0.0000*S(Q) +0.0000 +0.0000*Q     dampExtraToZero=0
+## Blend     numBanks=     banks=
+soqCorrFile=
+## Soqd     minProcOut=
+samPlazcek=temperature=300.000     vanPlazcek=containermut=0.000500000     smoothData=filtermut=0.0200000     modifyData=
+## Corps     minProcOut=radiationtype=3     numBanksMiss=
+

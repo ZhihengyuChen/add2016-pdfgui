@@ -1,0 +1,58 @@
+History written: Tue Mar 19 12:33:06 2013
+produced by dave
+##### Run Information     runCorrection=T
+prep=gsas     machine=npdf
+run=800K     background=npdf_00907
+smooth=2    smoothParam=32 32 0    backKillThresh=-1.0
+in beam: radius=0.635     height=2.54
+temp=800     runTitle=LaMnO3 800.0, npdf_01025 HIPPO-furnace
+
+##### Vanadium     runCorrection=T
+run=npdf_00709     background=npdf_00710
+smooth=2    smoothParam=32 32 0    vanKillThresh=4.0    vBackKillThresh=-1.0
+in beam: radius=0.635     height=2.54
+
+##### Container     runCorrection=T
+run=npdf_00917     background=npdf_00907
+smooth=2    smoothParam=32 32 0    cBackKillThresh=-1.0
+wallThick=0.023     atomDensity=0.072110
+atomic information: scattCS=5.100     absorpCS=5.080
+
+##### Sample Material     numElements=3     NormLaue=0.47445
+Element relAtomNum atomMass atomCoherCS atomIncoherCS atomAbsorpCS
+   O        0.6000   15.999      4.2320        0.0008      0.00019
+  Mn        0.2000   54.931     -1.7500        0.4000     13.30000
+  La        0.2000  138.905      8.5300        1.1300      8.97000
+density=     effDensity=3.3237
+
+##### Banks=6  deltaQ=0.01  matchRef=0  matchScal=T  matchOffset=T
+bank   angle   blendQmin   blendQmax       (0.0 means no info)
+  1     90.0        1.62    25.75   
+  2    -90.0        1.62    25.75   
+  3    119.0        1.97    31.37   
+  4    -119.0        1.97    31.37   
+  5    148.0        2.20    35.00   
+  6    -148.0        2.20    35.00   
+
+##### Program Specific Information
+## Ft     calcError=1     (1 for true, 0 for false)
+numRpoints=2000     maxR=20.0     numDensity=0.0   intMaxR=1.5
+## Damp     Qmin=1.62     Qmax=35.00     startDampQ=35.00    QAveMin=0.6
+dampFuncType=0     modEqn=1.0000*S(Q) +0.0000 +0.0000*Q     dampExtraToZero=0
+## Blend     numBanks=6     banks=1,2,3,4,5,6
+soqCorrFile=
+## Soqd     minProcOut=0
+samPlazcek=0     vanPlazcek=0     smoothData=0     modifyData=1
+## Corps     minProcOut=0     numBanksMiss=0
+
+##### prepgsas     prepOutput=1     numBanksMiss=0       fileExt=gsa
+instParamFile=npdf_displex_757.iparm
+numBanksAdd=0
+numBanksMult=6
+Bank#  mulData  mulBack
+   1      1.0230      1.0000
+   2      1.0300      1.0000
+   3      1.0200      1.0000
+   4      0.9800      1.0000
+   5      0.9930      1.0000
+   6      0.9750      1.0000
