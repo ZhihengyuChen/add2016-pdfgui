@@ -155,6 +155,6 @@ _atom_site_fract_z
 _atom_site_B_iso_or_equiv
 _atom_site_occupancy
 _atom_site_attached_hydrogens
-Cd1 Cd2+ 4 a 0 0 0 . 1. 0
-Se1 Se2- 4 c 0.25 0.25 0.25 . 1. 0
+Cd1 Cd 4 a 0 0 0 . 1. 0
+Se1 Se 4 c 0.25 0.25 0.25 . 1. 0
 #End of data_41528-ICSD
