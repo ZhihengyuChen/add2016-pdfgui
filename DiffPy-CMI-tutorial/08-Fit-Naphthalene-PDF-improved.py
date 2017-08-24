@@ -7,7 +7,7 @@ from diffpy.srreal.pdfcalculator import ConstantPeakWidth
 from diffpy.srfit.pdf import PDFContribution
 from diffpy.srfit.fitbase import FitRecipe, FitResults
 
-nphcrystal = loadCrystal('NAPHTA.cif')
+nphcrystal = loadCrystal('naphthalene.cif')
 nphmol = Molecule(nphcrystal, "naphthalene")
 numatoms = nphcrystal.GetNbScatterer()
 atoms = [nphcrystal.GetScatterer(i) for i in range(numatoms)]
@@ -25,7 +25,7 @@ nphcrystal.AddScatterer(nphmol)
 nphmol.X, nphmol.Y, nphmol.Z = xyzf.mean(axis=0)
 
 pdfcntb = PDFContribution('pdfcntb')
-pdfcntb.loadData('pdfs/Naphthalene_300K_sum4_12qmax195.gr')
+pdfcntb.loadData('naphthalene.gr')
 pdfcntb.qdamp = 0.06
 pdfcntb.setCalculationRange(1.1, 25)
 pdfcntb.addStructure('nphmol', nphmol, periodic=False)
